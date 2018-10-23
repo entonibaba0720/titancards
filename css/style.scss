@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100%;
+}
+
+@font-face {
+    font-family: ArchivoBlack;
+    src: url('../fonts/ArchivoBlack-Regular.ttf');
+}
+
+@font-face {
+    font-family: ArchivoMedium;
+    src: url('../fonts/Archivo-Medium.ttf');
+}
+
+h2 {
+    font-family: "ArchivoBlack", sans-serif;
+    font-size: 50px
+}
+
+p {
+    font-family: "ArchivoMedium", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pad-left-65 {
+    padding-left: 65px
+}
+
+.mar-top-25 {
+    margin-top: 25px
+}
+
+.pad-top-40 {
+    padding-top: 40vh;
+}
+
+
+/* SECTION 1 */
+
+.container-fluid {
+    height: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-wrapper {
+    height: 100vh;
+}
+
+.swiper-wrapper .slide-one {
+    background-image: url(../images/sliders_bg_01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100%
+}
+
+.slide-two {
+    background-image: url(../images/slider_bg_02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+.slide-three {
+    background-image: url(../images/slider_bg_03.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 70px;
+    margin-bottom: -90px;
+    /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+
+.social-icons {
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.social-icons ul li {
+    padding: 30px 0;
+    text-align: center;
+}

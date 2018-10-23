@@ -22,6 +22,11 @@ html {
     src: url("../fonts/Archivo-Medium.ttf");
 }
 
+@font-face {
+    font-family: ArchivoBold;
+    src: url("../fonts/Archivo-Bold.ttf");
+}
+
 h2 {
     font-family: "ArchivoBlack", sans-serif;
     font-size: 50px;
@@ -127,6 +132,7 @@ p {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 10;
+    align-content: center;
 }
 
 .social-icons ul li {
@@ -135,7 +141,7 @@ p {
 }
 
 .logo_icon {
-    padding-left: 70px;
+    padding-left: 80px;
 }
 
 .menu_icon {
@@ -144,4 +150,12 @@ p {
 
 .logo_header {
     top: 10px;
+}
+
+.lang {
+    position: fixed;
+    top: 90%;
+    left: 70px;
+    z-index: 10;
+    font-family: "ArchivoBold", sans-serif;
 }

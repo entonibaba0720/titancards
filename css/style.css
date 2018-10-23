@@ -9,6 +9,7 @@ html {
     margin: 0;
     position: relative;
     height: 100%;
+    width: 100%;
 }
 
 @font-face {
@@ -36,8 +37,12 @@ p {
     padding-left: 75px;
 }
 
+.pad-left-100 {
+    padding-left: 100px
+}
+
 .pad-right-75 {
-    padding-right: 75 px;
+    padding-right: 75px;
 }
 
 .mar-top-25 {
@@ -53,6 +58,7 @@ p {
 
 .container-fluid {
     height: 100%;
+    padding: 0;
 }
 
 .swiper-container {
@@ -81,15 +87,16 @@ p {
 }
 
 .swiper-wrapper .slide-one {
-    background-image: url(../images/sliders_bg_01.png);
+    background-image: url(../images/main_screen_photo.png);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    background-position: center center;
     width: 100%;
 }
 
 .slide-two {
-    background-image: url(../images/slider_bg_02.png) center center;
+    background-image: url(../images/slider_bg_02.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -116,7 +123,7 @@ p {
 .social-icons {
     position: fixed;
     top: 50%;
-    left: 90px;
+    left: 80px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 10;
@@ -125,4 +132,16 @@ p {
 .social-icons ul li {
     padding: 40px 0;
     text-align: center;
+}
+
+.logo_icon {
+    padding-left: 70px;
+}
+
+.menu_icon {
+    padding-right: 70px;
+}
+
+.logo_header {
+    top: 10px;
 }

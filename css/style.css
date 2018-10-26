@@ -10,6 +10,7 @@ html {
     position: relative;
     height: 100%;
     width: 100%;
+    color: #E6E7E6;
 }
 
 @font-face {
@@ -64,6 +65,7 @@ p {
 .container-fluid {
     height: 100%;
     padding: 0;
+    overflow: hidden;
 }
 
 .swiper-container {
@@ -95,7 +97,6 @@ p {
     background-image: url(../images/main_screen_photo.png);
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
     background-position: center center;
     width: 100%;
 }

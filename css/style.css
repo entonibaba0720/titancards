@@ -41,6 +41,7 @@ p {
     font-family: "ArchivoMedium", sans-serif;
     font-size: 16px;
     font-weight: 300;
+    min-width: 400px
 }
 
 .pad-left-75 {

@@ -12,4 +12,19 @@ $(document).ready(function() {
         },
 
     });
+
+    $('.menu_icon').click(function() {
+        $('#menu').toggleClass('active');
+        $('.menu_icon').hide();
+        $('.menu_close').show();
+    });
+
+    $('.menu_close').click(function() {
+        $('.menu_icon').show();
+        $('.menu_close').hide();
+
+    });
+
+
+
 });

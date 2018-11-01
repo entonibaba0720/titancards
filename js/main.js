@@ -10,8 +10,6 @@ $(document).ready(function() {
             el: '.swiper-pagination',
 
         },
-        renderBullet: function(index, className) {
-            return '<span class="' + className + '">' + (index + 1) + '</span>';
-        }
+
     });
 });

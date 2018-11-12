@@ -66,12 +66,20 @@ p {
     margin-top: 30px;
 }
 
+.mar-top-20 {
+    margin-top: 20px;
+}
+
 .pad-top-45 {
     padding-top: 45vh;
 }
 
 .hidden {
     display: none;
+}
+
+p {
+    letter-spacing: .01rem;
 }
 
 
@@ -411,8 +419,4 @@ svg {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-}
-
-#titancards p {
-    letter-spacing: .1rem;
 }

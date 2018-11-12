@@ -21,11 +21,8 @@
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
-
-
     <!-- Custom JS -->
     <script src="js/main.js" async></script>
     <!-- Favicon -->
@@ -33,7 +30,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <section id="first" class="container-fluid">
         <div class="navbar-wrapper">
             <div class="container-fluid">
                 <div class="row">
@@ -65,9 +62,13 @@
 
                         </div>
                     </div>
+                    <!-- end .header -->
                 </div>
+                <!-- end row -->
             </div>
+            <!-- end container-fluid-->
         </div>
+        <!-- end navbar-wrapper -->
 
         <nav id="menu">
             <ul>
@@ -78,6 +79,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <!-- end menu -->
 
         <div class="hidden-xs social-icons">
             <ul>
@@ -92,6 +94,7 @@
                 </li>
             </ul>
         </div>
+        <!--end .social-icons-->
 
         <div class="row">
             <div class="lang">
@@ -112,12 +115,10 @@
 
             </div>
         </div>
-
-
-
+        <!--end .lang&&scroll row-->
 
         <!-- Swiper -->
-        <div class="swiper-container">
+        <div class="swiper-container swiper1">
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide-one">
                     <div class="container-fluid">
@@ -148,22 +149,133 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <!-- Add Pagination -->
-
-            <div class="swiper-pagination"></div>
-
-
+            <!-- end swiper-wrapper-->
+            <div class="swiper-pagination swiper-pagination1"></div>
         </div>
-    </div>
+        <!-- end swiper1-->
+    </section>
+    <!-- end container-fluid-->
 
-    <div id="about_us">
-        <h2>OUR RANGE</h2>
-        <span class="line"><object type="image/svg+xml" data="images/main_screen-assets/line_icon.svg"></object></span>
 
-    </div>
+    <section id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <div class="about_text">
+                        <h2>OUR RANGE</h2>
+                        <span class="line"><object type="image/svg+xml" data="images/main_screen-assets/line_icon.svg"></object></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-offset-3 col-sm-6 col-md-offset-2 col-md-8">
+                    <div class="swiper-container swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="icon_wrapper">
+                                    <div class="icon_image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103" height="76" viewBox="0 0 103 76">
+                    <image id="prepaid_icon.svg" class="icon" width="103" height="76" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAABMCAMAAABH9Fk+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABRFBMVEUAAAAAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAAAD4kUxFAAAAanRSTlMAA7L+r/2p/K084sQexjkcIAzL+Uzm+/Lw7+Dd+A0QB0njxywRCAF68YcOiw91vhtt7p66GjJ5+or2fI8dEimFt65nOJK4p1IJbti1GZG5K9XtTQvW7MMwY6sW99kmTrHf2pVfv9GCFT+BZ+Je6wAAAAFiS0dEAIgFHUgAAAAJcEhZcwAALiMAAC4jAXilP3YAAAGZSURBVFjD7dn3U8IwFAfw4EKLC0cBB3VWxYmrDhQ3OHDj3tv8/3+AvlZOVBrq8YJ3+L4/cNyFx+fSNk2aMiaKq6iY4yRPjNgpKcVihE6ZG40ROK5yREbgVCjQ7qlkOcZDTgE4VdU1tTnFW+fIqUcaqtmcfI0fcn7rNDRCu+rzO0hAabJLc4uj/hTaOCWHHHKyOq3B79Ha2qG9o9MbdJyubl3s9PTi3C37QkIHi8nioDG8f0DgDPqxGD40bOvoI2E0RuSM4vWG87FxW8f6wUSuo2TSPMeC64AcctAdw3YfANexDzl/60xN58eZ8cHfzEZCn5O4ZrWY8/6c/PHzEXLIISeV+ejC4pK2vLK6FotLdNYDULRh3ms2t6Q51hZGKomgLGcbStzvc6e1abYjydF2oWRP5Tyswrd9Sc7BIZQkDcviPKZLOm5HUAJrDmvdcSypP+wkmX4dnJ7JcljiHIrCBnxeXDJpDru6vrm9i9w/KI9Pz0yi8yP/1HmJO9+NyBT91VzvZHreTndUpPdwmZ6Dv/QHKeSQI3beALnKbGrUpPpJAAAAAElFTkSuQmCC"/>
+                  </svg>
+                                    </div>
+                                    <div class="icon_text">
+                                        <h3>Prepaid <br>Mastercard</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="icon_wrapper">
+                                    <div class="icon_image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99" height="60" viewBox="0 0 99 60">
+                            <image id="mastercard_icon.svg" class="icon" data-name="mastercard icon.svg" width="99" height="60" xlink:href="data:img/png;base64,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"/>
+                          </svg>
+                                    </div>
+                                    <div class="icon_text">
+                                        <h3>Mastercard <br>Safety</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="icon_wrapper">
+                                    <div class="icon_image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="58" viewBox="0 0 90 58">
+                            <image id="bespoke_icon.svg"width="90" height="58" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAA6CAMAAAAHgr5qAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA6lBMVEUAAAAAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAAADhylYcAAAATHRSTlMABpwFigR5A2dYS/7LysBtcGhgX2nlD/0CKk5EDjRROjfO9ZLm6mtC+pEQ9khhvAik8fAKu/IaCa3vdB37+GL8uPPWnQcBE4V4Juxv1JNn/QAAAAFiS0dEAIgFHUgAAAAJcEhZcwAALiMAAC4jAXilP3YAAAESSURBVFjD7ddZT8JAEAfw0VKrgNIWtQVF5KpcXhRQLm9sgf3+n4dtS2j3xfAw+4CZ/8skTfrrZrrZzALwHBwyCQlkJSVDDmj1SIrMae1YjsxAO5EkM0hnpNHZ0yBnOf3vGOauyZ9vFgtRuQC8XFpEE0000UQTTTTR+03bheLVNZ+jSzdlFZW2byv85WotX+el4SDS9l0zOT82W3h0uy7Opp0uFq3eizKzHrDox6ctmnkOS09Dot1+TDfCMhgi0S+vMT2KVu0i0co40ebwAxWsXsNkKv7GmYFGq2+C/P4BaDTffp9BM77CrTL9/kGkYf5ren4Z5hPHyy02z/bg5Puv9NLRsbLyxYu0xfADEkyiid4pa1vzVmxCnVw7AAAAAElFTkSuQmCC"/>
+                          </svg>
+                                    </div>
+                                    <div class="icon_text">
+                                        <h3>Bespoke Card <br>Design</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="icon_wrapper">
+                                    <div class="icon_image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94" height="60" viewBox="0 0 94 60">
+                            <image id="corporate_icon.svg" data-name="corporate icon.svg" width="94" height="60" xlink:href="data:img/png;base64,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"/>
+                          </svg>
+                                    </div>
+                                    <div class="icon_text">
+                                        <h3>Corporate</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="icon_wrapper">
+                                    <div class="icon_image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="81" viewBox="0 0 62 81">
+                            <image id="funding_icon.svg" width="62" height="81" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAABRCAMAAAC9veX5AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA81BMVEUAAAAAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAAABC6gQLAAAAT3RSTlMAevhi9kz1Oe8o6Bje1pSQjcL8DtD+5SJzBMH98C0BsTwCnfoDiflgcPcGWowHRPGhCTLsuQ0h48sSFdjdHczpJrw0u/tCVGYFpAoI7RDPAvIKLAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAALiMAAC4jAXilP3YAAAEaSURBVFjD7djZTgIxFAbgYRdQQBZhFAUE3ADZHBVc2WQR5f3fhos5LNMy9pQQBsP5L5t8SZv+bZMqChubfYIPpx1OCc1xl1tGs9xzIKUZ7vXJaSP3H8LoUSD4d0LHYY5HojFdn8QVURJ2lqunZ7pOnl+swVP6fCbhdEaoeX6ZhYW7cmLN8fwV6GsVoVl+cws6cYfRDC/MylYsobSR35dBV6o4beC1OugHDamX+eMT6OcGVi/x5guU7fUNrRe8+g7641NcNo5rLSibsy2h57zThar2MGXj+OzkfqHKZsb7AynN8OFITjM8+G09H/N34Q/xbXBr932f+YqNW5EI8Y3zf10b4sSJEydOfAf5r+izwuzvAvWkm4a4VXwKCN5OdcdUE0MAAAAASUVORK5CYII="/>
+                          </svg>
+                                    </div>
+                                    <div class="icon_text">
+                                        <h3>Funding</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="icon_wrapper">
+                                    <div class="icon_image">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="76" viewBox="0 0 89 76">
+                                <image id="online_icon.svg" width="89" height="76" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABMCAMAAAAxzuu1AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAh1BMVEUAAAAAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAo7AAAABSiL7TAAAAK3RSTlMAhvQDfvKi5vXw8ePg3fb+LrP33x8gExDELwsSwASt7/vzfw2yhw6u/an802VcfAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAALiMAAC4jAXilP3YAAAC+SURBVFjD7dhJD4IwEIbhUUQFVFxw3/dl/v//U6wXExKmTUdD8r0XLuU5dUlLlFers/fUYFaDWQ1mChqhCszUbLXDV1FxcdKxrdv7yOaT9slbA8iQIUOGDBkyZMiQIUOGXBl5mIysr5Sym6ZCkCsvZ+MsbzItiWbmh3npfF68xy/lC2BlZI9LCjJkyJD/LK83Ufz9XrzdGXlf/JzMh6MIDk6p7UZ/vijBQvl6sz+cRPL94XDsSWQnWCK7wb+Un9sjW9HX1fL+AAAAAElFTkSuQmCC"
+                                />
+                                </svg>
+                                    </div>
+                                    <div class="icon_text">
+                                        <h3>Online</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev hidden-xs" tabindex="0" role="button" aria-label="Previous"></div>
+                        <div class="swiper-button-next hidden-xs" tabindex="0" role="button" aria-label="Next"></div>
+                        <!-- end swiper-wrapper -->
 
+                    </div>
+                    <!-- end swiper-container swiper2 -->
+                    <div class="swiper-pagination swiper-pagination2"></div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-sm-offset-2 col-sm-8 text-center  funding">
+                    <h3 class="blue">TitanCards is a key partner of Peak Financial Services.</h3>
+                    <p>*The Funding Account is the account where the cards can be loaded from.</p>
+                </div>
+            </div>
+    </section>
+    <!-- end about section -->
+    <section id="titancards">
+        <div class="row">
+            <div class="col-sm-offset-5 col-md-offset-5 col-lg-offset-7 col-sm-5 col-md-5 col-lg-4 text-justify pad-top-45 hero-text">
+                <h2>TitanCards</h2>
+                <span class="line"><object type="image/svg+xml" data="images/main_screen-assets/line_icon.svg "></object></span>
+                <p class="mar-top-30">TitanCards is one of the first card provider in the CEE region that provides payment solutions specifically for corporations that can be integrated quickly and easily.</p>
+                <p class="mar-top-30">Our objective is to provide top-standard prepaid payment products and services to our partners in cooperation with MasterCard, enabling them to modernise their financial processes, thereby cutting costs and boosting operating efficiency.</p>
+            </div>
+        </div>
+    </section>
+    <!-- end titancards section -->
 </body>
 
 </html>

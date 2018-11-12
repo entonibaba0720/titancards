@@ -412,3 +412,7 @@ svg {
     height: 100vh;
     overflow: hidden;
 }
+
+#titancards p {
+    letter-spacing: .1rem;
+}

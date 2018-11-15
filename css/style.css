@@ -31,22 +31,21 @@ html {
 h2 {
     font-family: "ArchivoBlack", sans-serif;
     font-size: 50px;
-    line-height: 3.5rem;
+    line-height: 3.6rem;
     text-align: left;
-    min-width: 500px
 }
 
 h3 {
-    font-family: "ArchivoBold", sans-serif;
+    font-family: "ArchivoBlack", sans-serif;
     font-size: 30px;
     text-align: left;
+    line-height: 2rem;
 }
 
 p {
     font-family: "ArchivoMedium", sans-serif;
     font-size: 16px;
     font-weight: 300;
-    min-width: 400px;
     line-height: 1.4rem;
 }
 
@@ -54,8 +53,12 @@ p {
     padding-left: 75px;
 }
 
-.pad-left-100 {
-    padding-left: 100px
+.pad-left-50 {
+    padding-left: 50px
+}
+
+.pad-left-60 {
+    padding-left: 60px
 }
 
 .pad-right-75 {
@@ -66,12 +69,36 @@ p {
     margin-top: 30px;
 }
 
-.mar-top-20 {
-    margin-top: 20px;
+.mar-top-45 {
+    margin-top: 45px;
 }
 
-.pad-top-45 {
-    padding-top: 45vh;
+.mar-top-15 {
+    margin-top: 15px;
+}
+
+.mar-top-100 {
+    margin-top: 100px;
+}
+
+.mar-bott-75 {
+    margin-bottom: 75px;
+}
+
+.mar-bott-90 {
+    margin-bottom: 90px;
+}
+
+.pad-top-43 {
+    padding-top: 43vh;
+}
+
+.pad-top-22 {
+    padding-top: 22vh;
+}
+
+.padd-185 {
+    padding: 0 185px;
 }
 
 .hidden {
@@ -79,7 +106,8 @@ p {
 }
 
 p {
-    letter-spacing: .01rem;
+    line-height: 1.2rem;
+    letter-spacing: 0;
 }
 
 
@@ -87,6 +115,8 @@ p {
 
 .header {
     position: fixed;
+    width: 100vw;
+    padding: 0;
 }
 
 .container-fluid {
@@ -168,6 +198,7 @@ p {
     background-image: url(../images/slider_bg_02.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     width: 100vw;
 }
 
@@ -175,6 +206,7 @@ p {
     background-image: url(../images/slider_bg_03.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     width: 100vw;
 }
 
@@ -200,7 +232,7 @@ p {
 }
 
 .social-icons ul li {
-    padding: 40px 0;
+    padding: 30px 0;
     text-align: center;
 }
 
@@ -212,8 +244,8 @@ p {
     padding-right: 80px;
 }
 
-.logo_header {
-    top: 10px;
+.header {
+    top: 80px;
 }
 
 sup {
@@ -275,15 +307,15 @@ a.lang-en {
 
 .scroll-down {
     position: fixed;
-    top: 89%;
-    left: 88%;
+    bottom: 60px;
+    right: 250px;
     z-index: 2;
 }
 
 .scroll-up {
     position: fixed;
-    top: 7%;
-    left: 88%;
+    top: 80px;
+    right: 250px;
     z-index: 2;
     display: none;
 }
@@ -402,6 +434,8 @@ svg {
     text-align: center;
     color: #5cbec6;
     margin-bottom: 25px;
+    font-family: 'ArchivoBold', sans-serif;
+    font-size: 30px;
 }
 
 .funding {
@@ -419,4 +453,70 @@ svg {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+}
+
+
+/* HOWITWORKS */
+
+#howitworks {
+    background-image: url(../images/main_screen_004_photo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#howitworks p {
+    font-size: 15.99px;
+    letter-spacing: .001rem;
+}
+
+
+/* SERVICES */
+
+#services {
+    background-image: url(../images/main_screen_005_photo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.services_text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.services_text h2 {
+    text-align: center;
+    margin-top: 220px;
+    margin-bottom: 15px;
+}
+
+.provides {
+    letter-spacing: -0.07px;
+    text-align: justify;
+    font-size: 15.99px;
+}
+
+.cards {
+    padding: 0 35px;
+    text-align: justify;
+}
+
+.request {
+    font-family: 'ArchivoBlack', sans-serif;
+    font-size: 20px;
+    margin-top: 35px;
+    padding: 10px;
+    background-color: #0197a3;
+    border: none;
+    color: #e6e7e6;
 }

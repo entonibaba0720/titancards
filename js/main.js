@@ -30,6 +30,26 @@ $(document).ready(function() {
         },
     });
 
+    // Section 3 swiper 
+    var swiper3 = new Swiper({
+        el: '.swiper3',
+        initialSlide: 0,
+        loop: true,
+        slidesPerView: 3,
+        preventClicksPropagation: false,
+        slideToClickedSlide: true,
+        pagination: {
+            el: '.swiper-pagination3',
+            paginationClickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+
+
 
     // Menu icon change and show the menu
     $('.menu_icon').click(function() {

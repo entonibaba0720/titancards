@@ -28,6 +28,11 @@ html {
     src: url("../fonts/Archivo-Bold.ttf");
 }
 
+@font-face {
+    font-family: ArchivoRegular;
+    src: url("../fonts/Archivo-Regular.ttf");
+}
+
 h2 {
     font-family: "ArchivoBlack", sans-serif;
     font-size: 50px;
@@ -77,6 +82,18 @@ p {
     margin-top: 15px;
 }
 
+.mar-top-40 {
+    margin-top: 40px;
+}
+
+.mar-top-50 {
+    margin-top: 50px;
+}
+
+.mar-top-60 {
+    margin-top: 60px;
+}
+
 .mar-top-100 {
     margin-top: 100px;
 }
@@ -87,6 +104,10 @@ p {
 
 .mar-bott-90 {
     margin-bottom: 90px;
+}
+
+.pad-top-40 {
+    padding-top: 40vh;
 }
 
 .pad-top-43 {
@@ -108,6 +129,16 @@ p {
 p {
     line-height: 1.2rem;
     letter-spacing: 0;
+}
+
+a {
+    color: #e6e7e6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0197a3;
+    text-decoration: none;
 }
 
 
@@ -289,7 +320,7 @@ a.lang-en {
 }
 
 .swiper-pagination-bullet {
-    margin: 0 40px !important;
+    margin: 0 30px !important;
     width: 15px !important;
     height: 15px !important;
     background-color: black !important;
@@ -417,7 +448,8 @@ svg {
     z-index: 5 !important;
 }
 
-.swiper-pagination.swiper-pagination2 {
+.swiper-pagination.swiper-pagination2,
+.swiper-pagination.swiper-pagination3 {
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -426,8 +458,9 @@ svg {
     width: 100%;
 }
 
-.swiper-pagination2 .swiper-pagination-bullet {
-    margin: 80px 20px !important;
+.swiper-pagination2.swiper-pagination-bullets,
+.swiper-pagination3.swiper-pagination-bullets {
+    margin: 80px 0px !important;
 }
 
 .blue {
@@ -509,6 +542,8 @@ svg {
 .cards {
     padding: 0 35px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
 }
 
 .request {
@@ -519,4 +554,135 @@ svg {
     background-color: #0197a3;
     border: none;
     color: #e6e7e6;
+    border-top-right-radius: 10px;
+}
+
+.cards h3:nth-child(1) {
+    height: 64px;
+}
+
+
+/* BENEFITS */
+
+#benefits {
+    background-image: url(../images/main_screen_006_photo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.benefits_text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits_text h2 {
+    text-align: center;
+    margin-top: 220px;
+    margin-bottom: 15px;
+}
+
+.safety_text {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.swiper3 .swiper-slide {
+    background-color: transparent;
+}
+
+.swiper3 .swiper-slide h3 {
+    font-family: 'ArchivoBold', sans-serif;
+}
+
+.swiper3 .swiper-slide h3:active {
+    color: #0197a3;
+}
+
+
+/* PROPRIETARY */
+
+#proprietary {
+    background-image: url(../images/your_brand_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* CONTACT */
+
+#contact {
+    background-image: url(../images/main_screen_008_photo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: #e6e7e6
+}
+
+#contact h2 {
+    font-size: 49.97px;
+}
+
+.contact_text,
+.message_text {
+    margin-top: 290px;
+    font-family: 'ArchivoRegular';
+    font-size: 30px;
+}
+
+.input_name,
+.input_email,
+.input_message {
+    border: none;
+    font-family: "Archivo-Regular", sans-serif;
+    background-color: transparent;
+    width: 570px;
+}
+
+.input_name,
+.input_email {
+    border-bottom: 2px solid #e6e7e6;
+}
+
+.input_message {
+    border: 2px solid #e6e7e6;
+    height: 190px;
+}
+
+::placeholder {
+    color: #e6e7e6;
+    font-family: "Archivo-Regular", sans-serif;
+    font-size: 16px;
+}
+
+.email a {
+    font-family: 'ArchivoBold', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    ;
+}
+
+.send {
+    font-family: 'ArchivoBlack', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #0197a3;
+    border: none;
+    color: #e6e7e6;
+    border-top-right-radius: 10px;
 }

@@ -6,10 +6,12 @@ $(document).ready(function() {
         initialSlide: 3,
         loop: true,
         slideToClickedSlide: true,
+        paginationType: "custom",
         pagination: {
             el: '.swiper-pagination1',
             paginationClickable: true,
         },
+
     });
 
     // Section 2 swiper with pagination
@@ -28,6 +30,14 @@ $(document).ready(function() {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+            // when window width is <= 768px
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                direction: 'horizontal'
+            }
+        }
     });
 
     // Section 3 swiper 
@@ -38,6 +48,7 @@ $(document).ready(function() {
         slidesPerView: 3,
         preventClicksPropagation: false,
         slideToClickedSlide: true,
+        centeredSlides: true,
         pagination: {
             el: '.swiper-pagination3',
             paginationClickable: true,
@@ -51,6 +62,7 @@ $(document).ready(function() {
 
 
 
+
     // Menu icon change and show the menu
     $('.menu_icon').click(function() {
         $('#menu').animate({
@@ -58,6 +70,8 @@ $(document).ready(function() {
         }, 'slow');
         $('.menu_icon').hide();
         $('.menu_close').show();
+
+
     });
 
     // X close the menu and change the menu icon

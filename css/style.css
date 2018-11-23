@@ -139,6 +139,11 @@ a:hover {
     text-decoration: none;
 }
 
+section {
+    height: 100vh;
+    padding-bottom: 20px;
+}
+
 
 /* SECTION 1 */
 
@@ -532,7 +537,6 @@ span.swiper-pagination-bullet,
     background-position: center center;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
 }
 
 #howitworks p {
@@ -684,7 +688,7 @@ span.swiper-pagination-bullet,
     border: none;
     font-family: "Archivo-Regular", sans-serif;
     background-color: transparent;
-    width: 570px;
+    width: 80%;
 }
 
 .input_name,
@@ -708,7 +712,6 @@ span.swiper-pagination-bullet,
     display: flex;
     align-items: center;
     height: 40px;
-    ;
 }
 
 .send {
@@ -728,159 +731,9 @@ span.swiper-pagination-bullet,
 /* Extra small */
 
 @media (max-width: 400px) {
-    /* SECTION 1*/
-    .hero_text {
-        font-size: 28px;
-        letter-spacing: 1.5px;
-        line-height: 35px;
-        padding-top: 250px
-    }
-    /*SECTION 2 */
-    .kiosk h2,
-    .arena h2 {
-        font-size: 2rem;
-        line-height: 2rem;
-        padding-top: 30px
-    }
-    .arena,
-    .kiosk {
-        padding: 0 15px;
+    /* GENERAL */
+    body {
         height: 100%;
-    }
-    .arena_banner {
-        height: 100%;
-        padding-right: 0;
-    }
-    .arena_text {
-        top: 0;
-        padding-left: 25px;
-        padding-top: 40px;
-    }
-    .arena_text h1 {
-        font-size: 2.5rem;
-        margin-bottom: .5rem;
-    }
-    .arena_text h2 {
-        font-size: 1.5rem;
-        margin-bottom: .5rem;
-        line-height: 2rem;
-        max-width: 250px
-    }
-    .arena_text p,
-    .kiosk_text p {
-        font-size: 1rem;
-        max-width: 250px;
-        line-height: 1.2rem;
-    }
-    .kiosk_text {
-        position: absolute;
-        top: 0;
-        margin-top: 20px;
-        padding-top: 0;
-        padding-left: 20px;
-        font-size: 1.5rem;
-        width: 270px;
-    }
-    /*SECTION 3*/
-    .section_3 h1 {
-        margin-bottom: 1rem;
-        font-size: 2.5rem
-    }
-    .big_card_logo_img {
-        height: 100px;
-    }
-    .section_3 h1 {
-        margin-bottom: 1rem;
-        font-size: 1.6rem
-    }
-    .big_card_logo_img {
-        height: 70px;
-        left: 10px
-    }
-    .big_card {
-        background-image: url(../images/1card.png);
-        background-size: cover;
-        background-position: center;
-    }
-    #cashcard_big_card {
-        width: 90%;
-        height: 750px;
-        font-size: 1rem
-    }
-    #cashcard_big_card ul li {
-        font-size: 1rem;
-        line-height: 1.3rem
-    }
-    .big_card ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding-left: 0
-    }
-    .cashcard_big_card_p {
-        line-height: 1.3rem;
-        padding: 0 15px;
-        font-size: 1rem
-    }
-    .cashcard_mvm.mvm {
-        margin-top: 2rem;
-        padding-left: 0;
-        font-size: 2rem;
-        width: 300px;
-    }
-    /* SECTION 4*/
-    .height {
-        padding-left: 0
-    }
-    #download_header {
-        font-size: 1.5rem;
-        padding-left: 10px
-    }
-    .step_header {
-        font-size: 1.5rem
-    }
-    .step_body {
-        margin-left: 10px
-    }
-    .max-height {
-        padding-left: 0
-    }
-    .appstore,
-    .googleplay {
-        justify-content: center;
-        width: 90%;
-        margin-top: 50px
-    }
-    .appstore {
-        margin-right: 0;
-    }
-    /*FOOTER*/
-    footer {
-        height: 100%;
-    }
-    .footer_1 p {
-        display: none;
-    }
-    .footer_1 p {
-        display: none;
-    }
-    .footer_2,
-    .footer_3,
-    .footer_4 {
-        justify-content: left;
-        margin-left: 10px
-    }
-    footer ul li {
-        font-size: 1.2rem;
-        line-height: 40px;
-        font-weight: 300;
-    }
-    .footer_logo {
-        margin-left: 20px
-    }
-    .footer_2,
-    .footer_3 {
-        width: 80%;
     }
 }
 
@@ -888,7 +741,7 @@ span.swiper-pagination-bullet,
 /* Mobile   (xs) */
 
 @media screen and (max-width: 767px) {
-    /* SECTION 1*/
+    /* FIRST */
     #menu {
         width: 100%;
     }
@@ -909,18 +762,50 @@ span.swiper-pagination-bullet,
     .menu_icon.menu_close {
         padding-top: 0;
     }
-    /* SECTION 2*/
-    .about_text h2 {
-        margin-top: 170px
+    .menu_icon {
+        padding-left: 0;
+        padding-right: 40px;
     }
-    /*SECTION 4 */
+    .logo_header {
+        padding: 0;
+    }
+    .logo_icon {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .scroll-up {
+        padding-top: 40px;
+    }
+    /* ABOUT */
+    .about_text h2 {
+        margin-top: 100px
+    }
+    /* HOWITWORKS */
     #howitworks .hero-text {
         padding-top: 20vh;
+    }
+    /* CONTACT */
+    #contact {
+        height: 100%;
+    }
+    .contact_text {
+        padding: 0 15px;
+    }
+    .contact_text,
+    .message_text {
+        margin-top: 100px;
+    }
+    #contact h2 {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+    .send {
+        margin-top: 0;
     }
 }
 
 @media(min-width:401px) and (max-width:767px) {
-    /* SECTION 1*/
+    /* FIRST */
     .hero-text {
         padding-left: 10px;
         padding-left: 10px;
@@ -945,14 +830,17 @@ span.swiper-pagination-bullet,
     #menu .resp_menu_social ul:nth-child(0) {
         padding-left: 20%;
     }
-    /* SECTION 2*/
+    /* CONTACT */
+    #contact h3 {
+        font-family: 'ArchivoRegular', sans-serif;
+    }
 }
 
 
 /* Tablet   (sm) */
 
 @media screen and (max-width: 994px) {
-    /* SECTION 1 */
+    /* FIRST */
     .swiper-container>.swiper-pagination-bullets {
         transform: rotate(0deg) !important;
         justify-content: center;
@@ -963,11 +851,10 @@ span.swiper-pagination-bullet,
         align-content: center;
         align-items: center;
     }
-    /* SECTION 2*/
 }
 
 @media(min-width:768px) and (max-width: 991px) {
-    /* SECTION 1*/
+    /* FIRST */
     .logo_header {
         top: 0;
     }
@@ -982,24 +869,20 @@ span.swiper-pagination-bullet,
         padding-right: 70px;
         margin-top: 0;
     }
-    /* SECTION 2*/
 }
 
 
 /* Laptop   (md) */
 
-
-/* SECTION 1*/
-
 @media screen and (min-width: 995px) and (max-width: 1200px) {
-    /* SECTION 1*/
+    /* FIRST */
     .menu_icon.menu_close {
         padding-right: 60px;
     }
-    /* SECTION 2*/
 }
 
 @media screen and (min-width: 1201px) {
+    /* FIRST */
     .menu_icon.menu_close {
         padding-right: 50px;
     }

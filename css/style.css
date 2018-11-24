@@ -733,6 +733,12 @@ span.swiper-pagination-bullet,
 
 @media screen and (max-width: 767px) {
     /* FIRST */
+    #logo_header.svg {
+        width: 200px;
+    }
+    .hero-text {
+        padding: 0 50px;
+    }
     .hero-text h2 {
         font-size: 2rem;
         line-height: 2.2rem;
@@ -807,6 +813,10 @@ span.swiper-pagination-bullet,
     }
     .send {
         margin-top: 0;
+    }
+    /* BENEFITS */
+    .benefits_text p {
+        padding: 50px;
     }
 }
 

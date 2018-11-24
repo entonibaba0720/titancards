@@ -733,8 +733,11 @@ span.swiper-pagination-bullet,
 
 @media screen and (max-width: 767px) {
     /* FIRST */
-    #logo_header.svg {
-        width: 200px;
+    #first {
+        height: 100%;
+    }
+    .header {
+        top: 40px;
     }
     .hero-text {
         padding: 40vh 50px;
@@ -822,14 +825,6 @@ span.swiper-pagination-bullet,
 
 @media(min-width:401px) and (max-width:767px) {
     /* FIRST */
-    .hero-text {
-        padding-left: 10px;
-        padding-left: 10px;
-        padding-top: 40vh;
-    }
-    .hero-text p {
-        margin-top: 15px;
-    }
     .hero-text h2 {
         font-size: 2.5rem;
         line-height: 2.5rem;

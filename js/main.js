@@ -32,7 +32,7 @@ $(document).ready(function() {
         },
         breakpoints: {
             // when window width is <= 768px
-            768: {
+            972: {
                 slidesPerView: 1,
                 spaceBetween: 10,
                 direction: 'horizontal'

@@ -31,7 +31,7 @@ $(document).ready(function() {
             prevEl: '.swiper-button-prev',
         },
         breakpoints: {
-            // when window width is <= 768px
+            // when window width is <= 972px
             972: {
                 slidesPerView: 1,
                 spaceBetween: 10,
@@ -57,6 +57,14 @@ $(document).ready(function() {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        breakpoints: {
+            // when window width is <= 972px
+            972: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                direction: 'horizontal'
+            }
+        }
     });
 
 

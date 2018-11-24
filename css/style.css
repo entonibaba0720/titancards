@@ -606,7 +606,7 @@ span.swiper-pagination-bullet,
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -810,7 +810,8 @@ span.swiper-pagination-bullet,
     .message_text {
         margin-top: 100px;
     }
-    #contact h2 {
+    #contact h2,
+    #benefits h2 {
         font-size: 2rem;
         margin-top: 50px;
     }
@@ -818,8 +819,13 @@ span.swiper-pagination-bullet,
         margin-top: 0;
     }
     /* BENEFITS */
-    .benefits_text p {
-        padding: 50px;
+    .safety_text {
+        font-size: 2rem;
+        margin: 0 auto 100px auto;
+        line-height: 2rem;
+    }
+    .prepaid-differ {
+        padding-top: 40vh;
     }
 }
 

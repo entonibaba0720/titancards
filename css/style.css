@@ -888,7 +888,7 @@ span.swiper-pagination-bullet,
     /* SECTION 2*/
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1201 px) {
     #about,
     #titancards,
     #howitworks,

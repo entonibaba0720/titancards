@@ -181,7 +181,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: left;
-    height: 100%;
     justify-content: center;
 }
 
@@ -809,7 +808,7 @@ span.swiper-pagination-bullet,
     .hero-text {
         padding-left: 10px;
         padding-left: 10px;
-        padding-top: 55vh;
+        padding-top: 40vh;
     }
     .hero-text p {
         margin-top: 15px;
@@ -887,4 +886,16 @@ span.swiper-pagination-bullet,
         padding-right: 50px;
     }
     /* SECTION 2*/
+}
+
+@media screen and (max-width: 995px) {
+    #about,
+    #titancards,
+    #howitworks,
+    #services,
+    #benefits,
+    #proprietary,
+    #contact {
+        height: 100%;
+    }
 }

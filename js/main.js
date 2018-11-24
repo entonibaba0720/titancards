@@ -68,7 +68,7 @@ $(document).ready(function() {
         $('#menu').animate({
             right: '0'
         }, 'slow');
-        $('.menu_icon').hide();
+
         $('.menu_close').show();
 
 
@@ -79,7 +79,7 @@ $(document).ready(function() {
         $('#menu').animate({
             right: '-100%'
         }, 'slow');
-        $('.menu_icon').show();
+
         $('.menu_close').hide();
     });
 

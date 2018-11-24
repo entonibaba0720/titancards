@@ -9,7 +9,6 @@ html {
     margin: 0;
     position: relative;
     color: #E6E7E6;
-    overflow: hidden;
 }
 
 @font-face {
@@ -537,6 +536,7 @@ span.swiper-pagination-bullet,
     background-position: center center;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 #howitworks p {

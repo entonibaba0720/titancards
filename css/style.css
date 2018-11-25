@@ -709,6 +709,9 @@
     
     @media screen and (max-width: 767px) {
         /* GENERAL */
+        #services {
+            height: 100%;
+        }
         /* FIRST */
         #first {
             height: 100%;
@@ -811,10 +814,6 @@
         .prepaid-differ {
             padding-top: 40vh;
             margin: 0 auto;
-        }
-        /* SERVICE */
-        #services {
-            height: 100%;
         }
     }
     

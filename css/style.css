@@ -227,7 +227,8 @@ section {
 .menu_icon.menu_close {
     padding-right: 0;
     display: hidden;
-    padding-top: 50px;
+    position: relative;
+    top: 150px;
 }
 
 .menu_lang .hu {
@@ -773,13 +774,12 @@ span.swiper-pagination-bullet,
     .menu_lang {
         margin-left: 18%;
     }
-    .menu_icon.menu_close {
-        padding-top: 0;
-        padding-right: 0;
-    }
     .menu_icon {
         padding-left: 0;
         padding-right: 40px;
+    }
+    .menu_icon.menu_close {
+        top: 0;
     }
     .logo_header {
         padding: 0;
@@ -869,7 +869,7 @@ span.swiper-pagination-bullet,
         background-color: #e6e7e6;
         color: black;
         font-family: "ArchivoBlack", sans-serif;
-        font-size: 50px;
+        font-size: 30px;
     }
 }
 

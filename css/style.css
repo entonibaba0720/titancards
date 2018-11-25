@@ -731,9 +731,6 @@ span.swiper-pagination-bullet,
 
 @media screen and (max-width: 767px) {
     /* GENERAL */
-    p {
-        line-height: 1rem;
-    }
     /* FIRST */
     #first {
         height: 100%;

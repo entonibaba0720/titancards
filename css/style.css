@@ -50,6 +50,7 @@ p {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.4rem;
+    letter-spacing: 0;
 }
 
 .pad-left-75 {
@@ -122,11 +123,6 @@ p {
 
 .hidden {
     display: none;
-}
-
-p {
-    line-height: 1.2rem;
-    letter-spacing: 0;
 }
 
 a {
@@ -734,6 +730,10 @@ span.swiper-pagination-bullet,
 /* Mobile   (xs) */
 
 @media screen and (max-width: 767px) {
+    /* GENERAL */
+    p {
+        line-height: 1rem;
+    }
     /* FIRST */
     #first {
         height: 100%;
@@ -742,7 +742,7 @@ span.swiper-pagination-bullet,
         top: 40px;
     }
     .hero-text {
-        padding: 40vh 50px;
+        padding: 40vh 30px;
     }
     .hero-text h2 {
         font-size: 2rem;
@@ -822,6 +822,9 @@ span.swiper-pagination-bullet,
         margin-top: 0;
     }
     /* BENEFITS */
+    #benefits {
+        height: 100%;
+    }
     .safety_text {
         font-size: 2rem;
         margin: 0 auto 100px auto;

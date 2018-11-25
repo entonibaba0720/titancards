@@ -134,6 +134,10 @@
         color: #0197a3;
         text-decoration: none;
     }
+    
+    section {
+        padding-bottom: 20px;
+    }
     /* SECTION 1 */
     
     .header {

@@ -542,7 +542,6 @@
         background-repeat: no-repeat;
         background-position: center center;
         width: 100%;
-        height: 100vh;
         overflow: hidden;
     }
     
@@ -734,6 +733,9 @@
         #menu {
             width: 100vw;
         }
+        #menu ul {
+            height: 80vh;
+        }
         #menu ul li {
             padding-left: 20%;
             font-size: 2rem;
@@ -766,6 +768,7 @@
         .menu_icon.menu_close {
             top: 0;
             padding: 0;
+            padding-right: 0;
         }
         .logo_header {
             padding: 0;
@@ -816,8 +819,35 @@
             line-height: 2rem;
         }
         .prepaid-differ {
-            padding-top: 40vh;
+            padding-top: 30vh;
             margin: 0 auto;
+            font-size: 14px;
+        }
+        .swiper3.swiper-container {
+            margin-top: 100px;
+        }
+        /* SERVICES */
+        .swiper4 {
+            height: 500px;
+        }
+        .services-slide-one,
+        .services-slide-two,
+        .services-slide-three {
+            background: transparent;
+            height: 100%;
+            width: 100vw;
+        }
+        .request {
+            display: block;
+            margin: 20px auto;
+        }
+        .provides {
+            margin: 40px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .swiper-pagination4 {
+            bottom: 0 !important;
         }
     }
     
@@ -858,6 +888,10 @@
             font-family: "ArchivoBlack", sans-serif;
             font-size: 30px;
         }
+        /* SERVICES */
+        #services {
+            height: 100%;
+        }
     }
     
     @media(min-width:768px) and (max-width: 991px) {
@@ -866,7 +900,12 @@
             top: 0;
         }
         .menu_icon {
-            padding-top: 2px
+            padding-top: 2px;
+            padding-right: 25px;
+        }
+        .menu_icon.menu_close {
+            right: 0;
+            left: 10%;
         }
         #menu ul li {
             font-size: 2.5rem;
@@ -875,18 +914,13 @@
     }
     /* Laptop   (md) */
     
-    @media screen and (min-width: 995px) and (max-width: 1200px) {
-        /* FIRST */
-        .menu_icon.menu_close {
-            right: 5%;
-        }
-    }
+    @media screen and (min-width: 995px) and (max-width: 1200px) {}
     
     @media screen and (min-width: 1201px) {
         /* FIRST */
         .menu_icon.menu_close {
             margin-left: 20px;
-            right: 5%;
+            left: 5%;
         }
         /* SECTION 2*/
     }
